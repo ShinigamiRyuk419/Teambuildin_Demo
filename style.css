@@ -1,0 +1,90 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  
+}
+body{
+  font-family: montserrat;
+  background-image: url('https://img.freepik.com/free-photo/team-holding-letters-with-blurred-background_1134-394.jpg?w=2000');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+nav{
+  background:rgb(54, 54, 228 , 0.5);
+  height: 80px;
+  width: 100%;
+}
+label.logo{
+  color: orange;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 20px;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.pn{
+  float: right;
+  margin-right: 5%;
+}
+.pn img{
+  margin-top: 5%;
+  padding: 5px;
+  width: 12\30px;
+  height: 60px;
+}
+
+.container .heading{
+  font-size: 3rem;
+  margin: 2rem;
+  color: blue;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+}
+
+.video-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.video-container .video{
+  height: 15rem;
+  width: 25rem;
+  margin: 2rem;
+  box-shadow: 0 0.5rem 1rem black;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.video-container .video video{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.video-container .video video:hover{
+  transition: 0.2s linear;
+  transform: scale(1.2);
+}
+
+.video-container .video .active{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: auto  ;
+  width: 80%;
+  box-shadow: 0 0 0 100vh rgb(8, 8, 10);
+  z-index: 1;
+}
+
+.video-container .video .active:hover{
+  transform: translate(-50%, -50%) scale(1);
+  transition: none;
+}

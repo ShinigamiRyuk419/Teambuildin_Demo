@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Team Building | Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> -->
+</head>
+
+<body>
+    <div class="wrap">
+        <nav>
+            <label class="logo">TeamBuilding</label>
+            <div class="pn">
+                <ul>
+                    <li><a href="https://www.passerellesnumeriques.org/en/"><img src="https://www.passerellesnumeriques.org/misc/logo-en.png"></a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="heading">Danasan Eco Adventure Park Team Building</div>
+            <div class="video-container">
+                <div class="video">
+                    <video src="https://youtu.be/ZBImMs9dC0Y" controls mute autoplay></video>
+                </div>
+                <div class="video">
+                    <video src="https://youtu.be/ZBImMs9dC0Y" controls mute></video>
+                </div>
+                <div class="video">
+                    <video src="https://youtu.be/ZBImMs9dC0Y" controls mute></video>
+                </div>
+                <div class="video">
+                    <video src="https://youtu.be/ZBImMs9dC0Y" controls mute></video>
+                </div>
+                <div class="video">
+                    <video src="https://youtu.be/ZBImMs9dC0Y" controls mute></video>
+                </div>
+                <div class="video">
+                    <video src="https://youtu.be/ZBImMs9dC0Y"controls mute></video>
+                </div>
+                <div class="video">
+                    <video src="https://youtu.be/ZBImMs9dC0Y" controls mute></video>
+                </div>
+                <div class="video">
+                    <video src="https://youtu.be/ZBImMs9dC0Y"controls mute></video>
+                </div>
+                <div class="video">
+                    <video src="https://youtu.be/ZBImMs9dC0Y" controls mute></video>
+                </div>
+                <div class="video">
+                    <video src="https://youtu.be/ZBImMs9dC0Y" controls mute></video>
+                </div>
+                <div class="video">
+                    <video src="https://youtu.be/ZBImMs9dC0Y" controls mute></video>
+                </div>
+                <div class="video">
+                    <video src="https://youtu.be/ZBImMs9dC0Y" controls mute></video>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+<script>
+    var video = document.querySelectorAll('video');
+
+    video.forEach(play => play.addEventListener('click', () => {
+        play.classList.toggle('active');
+
+        if (play.paused) {
+            play.play();
+        } else {
+            play.pause();
+            play.currentTime = 0;
+        }
+    }));
+
+
+
+</script>
+
+</html>
