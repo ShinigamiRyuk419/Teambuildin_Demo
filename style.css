@@ -60,17 +60,32 @@ label.logo{
   border-radius: 1rem;
 }
 
-.video-container .video video{
-  height: 100%;
+.video-container .video .description{
+  height: 3rem;
+  width: 25rem;
+  /* margin: 2rem; */
+  /* box-shadow: 0 0.5rem 1rem black; */
+  /* overflow: hidden; */
+  /* border-radius: 1rem; */
+  text-align: center;
+  padding-top:0.5rem;
+}
+
+.video-container .video iframe{
+  height: 80%;
   width: 100%;
   object-fit: cover;
   outline: none;
   border: none;
   cursor: pointer;
 }
-.video-container .video video:hover{
+.video-container .video iframe:hover{
   transition: 0.2s linear;
-  transform: scale(1.2);
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
 }
 
 .video-container .video .active{
